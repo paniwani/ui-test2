@@ -24,3 +24,7 @@ gem 'jquery-rails'
 
 # Twitter bootstrap
 gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+group :production do
+  gem 'pg'
+end
