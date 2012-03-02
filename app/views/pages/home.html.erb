@@ -1,1 +1,22 @@
-<%= image_tag 'logo.png', id: 'logo' %>
+<div class='row'>
+  <div class='span2 offset10'>
+    <%= link_to 'Start', start_path, class: 'btn btn-success btn-large', remote: true, id: 'start-btn' %>
+  </div>
+<div>
+
+<div id="search" class="hero-unit">
+  <h1>What do you want for dinner this week?</h1>
+  <%= form_tag 'ajax/search', remote: true do %>
+    <%= text_field_tag :q, nil, class: 'input-xlarge' %>
+  <% end %>
+</div>
+
+<div class='row' id='logo'>
+  <div class='span4 offset4'>
+    <%= image_tag 'logo.png' %>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='span12' id='recipes'></div>
+</div>

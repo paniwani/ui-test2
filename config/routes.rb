@@ -1,5 +1,8 @@
 UiTest2::Application.routes.draw do
-  get "pages/home"
+  get 'pages/home'
+  match 'ajax/start'  => 'ajax#start',  :as => 'start'
+  match 'ajax/add'    => 'ajax#add',    :as => 'add'
+  match 'ajax/search' => 'ajax#search', :as => 'search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,11 @@
+$('#search input').val('');
+
+var nrecipes = $('#recipes').children().size();
+
+if ( nrecipes == 0 ) {
+	$('#search').animate({ marginTop: '0' }, 'fast', function(){
+		$('#recipes').append('<%=j image_tag @thumb %>').fadeIn();
+	});
+} else if ( nrecipes < 7 ) {
+	$('<%=j image_tag @thumb %>').hide().appendTo('#recipes').fadeIn();
+}

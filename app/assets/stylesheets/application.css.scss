@@ -8,7 +8,9 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap_and_overrides
  *= require_self
+ *= require jquery-ui
  *= require_tree .
 */
 
@@ -16,14 +18,38 @@ body {
 	color: white;
 	background-image: url('bkg.png');
 	
-	img#logo {
-		position: absolute;
-		top: 50%;
-	  left: 50%;
-	  width: 321px;
-	  height: 64px;
-	  margin-top: -32px; /* Half the height */
-	  margin-left: -160px; /* Half the width */
+	div#search {
+		margin-top: 200px;
+		width: 1200px;
+		text-align: center;
+		display: none;
+		background-color: transparent;
+		
+		h1 {
+			color: white;
+		}
+		
+		input {
+			margin-top: 30px;
+			height: 30px;
+			font-size: 20px;
+			margin-right: 135px;
+		}
+	}
+	
+	div#logo {
+		margin-top: 200px;
+	}
+	
+	#recipes {
+		display: none;
+		text-align: center;
+		
+		img {
+			width: 250px;
+			height: 250px;
+			margin: 10px;
+		}
 	}
 }
 
