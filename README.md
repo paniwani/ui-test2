@@ -1,1 +1,1 @@
-Project to demo new Weekly Eats UI with omnibar and JS animations
+Project to [demo](http://weats-ui-test2.herokuapp.com/) new Weekly Eats UI with omnibar and JS animations
