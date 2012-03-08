@@ -1,0 +1,1 @@
+Project to demo new Weekly Eats UI with omnibar and JS animations
